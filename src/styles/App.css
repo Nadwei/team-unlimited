@@ -1,0 +1,287 @@
+/* Header */
+body{
+box-sizing: border-box;
+margin:0;
+padding:0;
+text-decoration:none;
+height:500em;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+
+
+
+#site-title {
+    /* border: solid 5px #aaa9ad; */
+    font-size:1.8rem;
+    font-weight: 800;
+    color: #f4f5f9;
+    letter-spacing:0.05em;
+    margin:0.5em 0.2em;
+    line-height:1.1em;
+    width:40%;
+    font-family: "Noto Serif", serif; ;
+    }
+
+#site-title a {
+    text-decoration:none;
+    color:#fff;
+}
+
+#site-title a:hover {
+    color:#776413;
+}
+
+/* NAV ---------------------------------- */
+
+#navbar {
+    display:flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #4aa5f5;
+}
+
+#navlinks{
+    display:flex;
+    justify-content: space-evenly;
+    margin:1em;
+    display:none;
+}
+
+#navlinks.closed {
+    display:none;
+}
+
+#navlinks.open {
+    display:flex;
+    position:absolute;
+    z-index: 1;
+    top:4em;
+    left:0;
+    background-color: #4aa5f5;
+    color:#fff;
+    height:3em;
+    width:100%;
+    margin-left:0;
+    border-top:solid 2px #fff;
+    align-items: center;
+    
+}
+
+.top-bar, .mid-bar, .bottom-bar{
+background-color:#fff;
+height:0.35em;
+width:2em;
+border-radius:0.3em;
+margin:0.15em;
+
+}
+
+#menu-icon{
+        display:flex;
+        flex-direction:column;
+        align-self:center;
+        margin-right:10px;
+    }
+
+#menu-icon:hover .menu{
+    background-color:#776413;
+    cursor:pointer;
+}
+
+.top-bar{
+
+}
+
+.mid-bar{
+
+}
+
+.bottom-bar{
+
+}
+
+#navlinks a {
+    text-decoration: none;
+    font-weight:500;
+    color: #f4f5f9;
+}
+
+#navlinks a:hover{
+color:#776413;
+}
+
+
+
+
+/* HOLISTIC WELLNESS ------------------------------ */
+
+.bodyImage{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:300px;
+    width:100%;
+}
+
+#philosophy{
+    /* background-color:#cee2f4; */
+    height:300px;
+    margin:10px 3em;
+}
+
+#philoSpiritImg{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:500px;
+    width:100%;
+}
+
+#philosophy-wrapper{
+}
+
+#philosophy-header{
+    color:#776413;
+    font-weight:500;
+    font-size:2.5rem;
+    margin:0;
+    margin-top:1em;
+}
+
+.text-heading{
+    color:#776413;
+    font-weight:500;
+    font-size:1.8rem;
+}
+
+.body-text{
+    justify-content:justify;
+    letter-spacing: 0.5px;
+    line-height:2em;
+}
+
+/* HOME -------------------------------- */
+
+#home-img{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:500px;
+    width:100%;
+}
+
+#home-grid{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    /* background-color:#b5d7f4; */
+    padding:0.5em;
+    grid-gap:1em;
+}
+
+#home-heading{
+    margin-left: 44px;
+}
+
+.grid-item{
+    background-color:#fff;
+    border-radius: 0.3em;
+    height:30em;
+    border-bottom: solid 2px #ccc;
+}
+
+/* ALTERNATIVE ------------------------------------------ */
+
+#alternative{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:500px;
+    width:100%;
+}
+
+#dojo-tagline{
+    text-align:center;
+    color:#776413;
+    margin-top:0;
+}
+
+
+/* COMPLEX WORKSHOP ----------------------------- */
+
+#mindBodyImg{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:500px;
+    width:100%;
+}
+
+/* ARTICLE ------------------------------------- */
+.articleHeaderImage{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:300px;
+    width:100%;
+    margin-bottom:1em;
+}
+
+.article-date{
+}
+
+.article-title{
+   margin-bottom:-15px;
+}
+
+.bodyImg1{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:300px;
+    width:100%;
+}
+
+.bodyImg2{
+    object-fit:cover;
+    object-position: 50% 50%;
+    height:300px;
+    width:100%;
+}
+
+
+
+#article-1{
+    margin:2em;
+    text-align:justify;
+    letter-spacing:0.015em;
+    font-size:18px;
+    line-height:2em;
+}
+
+
+
+/* MEDIA QUERIES ----------------------*/
+@media (min-width: 425px) {
+    #navbar {
+      flex-direction: row;
+      height:5em;
+    }
+
+    #site-title{
+        align-self: center;
+    }
+  }
+
+  @media (min-width:768px) {
+    #menu-icon{
+        display:none;
+    }
+    #navlinks{
+        display:flex !important;
+        align-items: last baseline;
+    }
+
+    #navlinks a{
+        width:100%;
+        padding:0em 2em;
+        font-size: 1.1rem;
+    }
+
+  }
