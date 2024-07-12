@@ -16,7 +16,7 @@ export default function Navbar(){
                 </h1>
                 
                     
-                {menuOpen && (
+                { (
                 <div id="navlinks" className="">
                     <Link to="/">Home</Link>
                     <Link to="/Briefing">Briefing</Link>

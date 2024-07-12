@@ -5,11 +5,10 @@ import React from "react";
 
 
 
-export default function Exotic_Tech(){
+export default function ExoticTech(){
 
     return(
         <div>
-            <img id="" src={require('')} alt="" />
             <h1 id=""></h1>
 
             <div id="">
