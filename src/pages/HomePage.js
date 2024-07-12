@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 
 export default function HomePage() {
@@ -8,7 +8,7 @@ export default function HomePage() {
       <img id="" src={""} alt="" />
       <h1 id="">Most Recent</h1>
       <div id="">
-        // Most Recent Articles Here
+        <p>Hello Bitches!</p>
       </div>
     </div>
   );
