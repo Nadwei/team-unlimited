@@ -28,7 +28,7 @@ useEffect(() => {
                 
                 <h1 id="site-title">
                     
-                    <Link to="/">Infinite Horizons</Link>
+                    <Link to="/">Team Unlimited</Link>
                 </h1>
                 
                 
@@ -36,9 +36,9 @@ useEffect(() => {
                 {menuOpen && (
                 <div id="navlinks" className={menuOpen  || isLargeScreen? "open" : "closed"}>
                     <Link to="/">Home</Link>
-                    <Link to="/Tech_Alternative">Tech/Alternative</Link>
-                    <Link to="/HolisticWellness">Holistic Wellness</Link>
-                    <Link to="/PersonalEnlightenment">Personal Enlightenment</Link>
+                    <Link to="/Briefing">Tech/Alternative</Link>
+                    <Link to="/Counter_Dynamical">Holistic Wellness</Link>
+                    <Link to="/Exotic_Tech">Personal Enlightenment</Link>
                     </div>
                 )}
                 <div id="menu-icon" onClick={() =>setMenuOpen(!menuOpen)}>
