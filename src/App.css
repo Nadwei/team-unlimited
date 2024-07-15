@@ -5,3 +5,156 @@ body {
   margin:0;
   background-color:#403d3d;
 }
+
+/* ----------------------- NAVBAR COMPONENT ----------------------- */
+
+/* ---- SITE TITLE ---- */
+
+#site-title{
+text-decoration:none;
+color:#01EFAC;
+font-size:2em;
+margin:0.25em;
+}
+
+/* ---- LINKS ---- */
+
+#navlinks {
+  display:flex;
+  justify-content:1em;
+  margin:1em;
+}
+
+#navlinks * {
+  color:#ffffff;
+  display:flex;
+  text-decoration:none;
+  margin:1em;
+  font-weight:500;
+}
+
+.link:hover {
+color:#01EFAC;
+}
+
+
+/* ----------------------- COUNTER-DYNAMICAL PAGE ----------------------- */
+
+.dynamical-emphasis{
+  color:#01EFAC;
+  font-weight:700;
+}
+
+#dynamical-head-wrapper{
+  margin:1em;
+  border:solid #ffffff 0.3em;
+  padding:1em 2em;
+}
+
+#dynamical-tagline{
+  color:#01EFAC;
+font-size:2em;
+}
+
+#dynamical-definition{
+  color:#ffffff;
+font-size:1.3em;
+font-weight:500;
+}
+
+
+/* ----------------------- HOME PAGE ----------------------- */
+
+
+
+/* ---- GRID ---- */
+
+#home-grid{
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:0.5em;
+  height:100%;
+  margin:2em;
+  width:auto;
+  padding:0.5em;
+  border:solid 3px #01EFAC;
+}
+
+.grid-item{
+  height:20em;
+  background-color: #ffffff;
+}
+
+/* ----------------------- BRIEFING ----------------------- */
+
+
+
+
+/* ---- WHO ---- */
+
+#who-grid{
+display:flex;
+gap:1em;
+}
+
+#who-heading{
+color:#01EFAC;
+}
+
+
+/* ---- WHAT ---- */
+
+#what-grid{
+  display:flex;
+  gap:1em;
+}
+
+#what-heading{
+  color:#01EFAC;
+  }
+
+
+
+/* ---- WHERE ---- */
+
+#where-grid{
+  display:flex;
+  gap:1em;
+}
+
+#where-heading{
+  color:#01EFAC;
+  }
+
+
+/* ---- WHY ---- */
+
+#briefing-why{
+  border: solid 0.3em #ffffff;
+  margin:1em;
+}
+
+#why-grid{
+  display:flex;
+  gap:1em;
+}
+
+#why-heading{
+  color:#01EFAC;
+  }
+
+.why-grid-item {
+
+}
+
+
+/* ---- HOW ---- */
+#how-grid{
+  display:flex;
+  gap:1em;
+}
+
+#how-heading{
+  color:#01EFAC;
+  }

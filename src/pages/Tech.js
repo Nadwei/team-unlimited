@@ -5,7 +5,7 @@ import React from "react";
 
 
 
-export default function ExoticTech(){
+export default function Exotic_Tech(){
 
     return(
         <div>

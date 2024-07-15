@@ -12,16 +12,16 @@ export default function Navbar(){
             <nav id="navbar">
                 
                 <h1 id="site-title">
-                    <Link to="/">Team Unlimited</Link>
+                    <Link id="site-title" to="/">Team Unlimited</Link>
                 </h1>
                 
                     
                 { (
                 <div id="navlinks" className="">
-                    <Link to="/">Home</Link>
-                    <Link to="/Briefing">Briefing</Link>
-                    <Link to="/Counter_Dynamical">Counter Dynamical</Link>
-                    <Link to="/Exotic_Tech">Exotic Tech</Link>
+                    <Link className="link" to="/">Home</Link>
+                    <Link className="link" to="/Briefing">Briefing</Link>
+                    <Link className="link" to="/Counter_Dynamical">Counter Dynamical</Link>
+                    <Link className="link" to="/Exotic_Tech">Exotic Tech</Link>
                     </div>
                 )}
                 <div id="menu-icon">
