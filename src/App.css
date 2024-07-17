@@ -4,6 +4,7 @@ body {
   padding:0;
   margin:0;
   background-color:#403d3d;
+  height: 200em;
 }
 
 /* ----------------------- NAVBAR COMPONENT ----------------------- */
@@ -157,4 +158,16 @@ color:#01EFAC;
 
 #how-heading{
   color:#01EFAC;
+  }
+
+  /* EXOTIC TECH IMAGES */
+
+  
+  /* STATIC IMAGE */
+
+  #exoticTechImg{
+  object-fit:cover;
+    object-position: 50% 50%;
+    height:500px;
+    width:100%;
   }
