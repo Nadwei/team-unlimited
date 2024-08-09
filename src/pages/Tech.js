@@ -1,29 +1,21 @@
 import React from "react";
 // import ExoticTechImg from "../assets/images/full-disclosure-image.jpg"
-
+import Article from "../components/articles/tech/Article_1"
+import articles from "../data/articles/Tech/article1";
 
 
 
 
 export default function Exotic_Tech(){
 
+const firstArticle = articles[0];
+
     return(
-        <div>
-            <img id="exoticTechImg" src={require('../assets/images/full-disclosure-image.jpg')} alt="" />
-
-            <h1 id=""></h1>
-
-            <div id="">
-                <h2></h2>
-            </div>
-
-            <div id="">
-                <h2></h2>
-            </div>
-
-            <div id="">
-                <h2></h2>
-            </div>
+        <div id="tech-wrapper">
+        <img id="tech-Img" src={require('../assets/images/personal-enlightenment.jpg')} alt=""/>
+        <div id="tech_articles">
+          <Article key={firstArticle.id} article={firstArticle} />
         </div>
+      </div>
     )
 }

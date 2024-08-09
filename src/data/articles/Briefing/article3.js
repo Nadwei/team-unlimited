@@ -2,9 +2,7 @@ import mainImage from '';
 import bodyImage1 from '';
 import bodyImage2 from '';
 
-import mainImage from '';
-import bodyImage1 from '';
-import bodyImage2 from '';
+
 
 const briefingArticle = [
   {
