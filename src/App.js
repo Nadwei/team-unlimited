@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Briefing from './pages/Briefing';
-import CounterDynamical from './pages/CounterDynamical';
-import Tech from './pages/Tech';
+import BriefingPage from './pages/BriefingPage';
+import CounterDynamicalPage from './pages/CounterDynamicalPage';
+import TechPage from './pages/TechPage';
 import HomePage from './pages/HomePage';
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path="/Briefing" element={<Briefing />} />
-          <Route path="/Counter_Dynamical" element={<CounterDynamical />} />
-          <Route path="/Exotic_Tech" element={<Tech />} />
+          <Route path="/Briefing" element={<BriefingPage />} />
+          <Route path="/Counter_Dynamical" element={<CounterDynamicalPage />} />
+          <Route path="/Exotic_Tech" element={<TechPage />} />
         </Routes>
       </Router>
     </div>

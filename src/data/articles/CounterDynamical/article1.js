@@ -2,9 +2,9 @@
 
 
 
-import mainImage from '';
-import bodyImage1 from '';
-import bodyImage2 from '';
+import mainImage from '../../../assets/images/articles/article1/minds-being-captured.jpg';
+import bodyImage1 from '../../../assets/images/articles/article1/dark-money-world-rot.jpg';
+import bodyImage2 from '../../../assets/images/articles/article1/dark-influence.jpg';
 
 
 const dynamicalArticle = [
@@ -48,6 +48,6 @@ const dynamicalArticle = [
       subparagraph_3: `Direct them to others, to resources, shielding info, reinforcement info, to organize, communicate, share, and make ammends with their deepest fears and demons now, while they still can.`,
     },
   },
-];
+] ;
 
 export default dynamicalArticle;

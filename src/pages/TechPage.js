@@ -12,7 +12,7 @@ const firstArticle = articles[0];
 
     return(
         <div id="tech-wrapper">
-        <img id="tech-Img" src={require('../assets/images/personal-enlightenment.jpg')} alt=""/>
+        <img id="tech-Img" src={require('../assets/images/dew-sat-earth-orbit.jpg')} alt=""/>
         <div id="tech_articles">
           <Article key={firstArticle.id} article={firstArticle} />
         </div>

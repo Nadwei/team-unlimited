@@ -1,38 +1,37 @@
-import React from 'react';
-import briefingArticles from '../data/articles/Briefing/article1';
-import techArticles from '../data/articles/Tech/article1';
-import counterDynamicalArticles from '../data/articles/CounterDynamical/article2';
-// import homeImage from "../assets/images/"
+import React, { useState, useEffect } from 'react';
 
+import briefingArticles from '../data/articles/Briefing/article1';
+// import techArticles from '../data/articles/Tech/article1';
+import counterDynamicalArticles from '../data/articles/CounterDynamical/article1';
+
+import homeImage from "../assets/images/earth-sky-universe-influence.jpg";
 
 export default function HomePage() {
-
-// load most recent articles using State variable...
-
+  // most recent articles using State variable
   const [articles, setArticles] = useState([]);
 
-
   useEffect(() => {
-    const combinedArticles = [...briefingArticles, ...counterDynamicalArticles, ...techArticles];
+    // Combine articles from different sources
+    const combinedArticles = [
+      ...briefingArticles,
+      // ...techArticles,
+      ...counterDynamicalArticles
+    ];
+
+    // Sort articles by date
     combinedArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     setArticles(combinedArticles);
+
+    console.log(combinedArticles);
   }, []);
 
   const renderArticleComponent = (article) => {
     if (briefingArticles.includes(article)) {
-      const ArticleBriefing = require('../components/articles/briefing/Article_1').default;
-      return <ArticleBriefing key={article.id} article={article} />;
-
-    } else if (techArticles.includes(article)) {
-      const ArticleTech = require('../components/articles/tech/Article_1').default;
-      return <ArticleTech key={article.id} article={article} />;
-
-    } else if (counterDynamicalArticles.includes(article)) {
-      const ArticleCounterDynamical = require("../components/articles/counterdynamical/Article_1").default;
-      return <ArticleCounterDynamical key={article.id} article={article} />;
-      }
-  
-    return null;
+      const ArticleBriefing = require('../components/articles/briefing/Article_1').default;      return <ArticleBriefing key={article.id} article={article} />;
+    } else {
+      return null;
+    }
   };
 
   return (
