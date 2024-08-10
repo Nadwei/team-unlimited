@@ -6,6 +6,12 @@ import counterDynamicalArticles from '../data/articles/CounterDynamical/article1
 
 import homeImage from "../assets/images/earth-sky-universe-influence.jpg";
 
+
+
+
+
+
+
 export default function HomePage() {
   // most recent articles using State variable
   const [articles, setArticles] = useState([]);
@@ -36,8 +42,7 @@ export default function HomePage() {
 
   return (
     <div id="home-wrapper">
-      <img id="home-img" src={homeImage} alt="Home" />
-      <h1 id="home-heading">Most Recent</h1>
+      <img id="home-image" src={homeImage} alt="Home" />
       <div id="home-grid">
         {articles.map(article => renderArticleComponent(article))}
       </div>

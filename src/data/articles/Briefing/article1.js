@@ -35,7 +35,8 @@ const briefingArticle = [
       {
         type: "image",
         src: bodyImage1,
-        alt: ""
+        alt: "",
+        className: "body-image"
       },
       {
         type: "text",
@@ -57,7 +58,8 @@ const briefingArticle = [
       {
         type: "image",
         src: bodyImage2,
-        alt: ""
+        alt: "",
+        className: "body-image"
       },
       {
         type: "text",
@@ -78,11 +80,7 @@ const briefingArticle = [
           "The persistence of certain names, projects, and defense contractors like Raytheon and Lockheed Martin across decades indicates a coordinated effort to advance these technologies, all while keeping the public in the dark."
         ]
       },
-      {
-        type: "image",
-        src: bodyImage3,
-        alt: ""
-      },
+      
       {
         type: "text",
         subheading: "A Modern-Day Canary in the Coal Mine",
@@ -90,6 +88,12 @@ const briefingArticle = [
           "The recent incidents involving U.S. diplomats in Havana and Russia, who experienced debilitating symptoms linked to directed energy weapons, are chilling reminders of the potential dangers.",
           "The once-laughable image of the tinfoil hat may not have been so nonsensical after all—it could have been an early warning sign."
         ]
+      },
+      {
+        type: "image",
+        src: bodyImage3,
+        alt: "",
+        className: "body-image"
       },
       {
         type: "text",
